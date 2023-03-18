@@ -7,6 +7,7 @@ import Register from './components/Header/Register/Register';
 import Products from './components/Header/Products/Products';
 import Orders from './components/Header/Orders/Orders';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+import Vip from './components/Vip/Vip';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='register' element={<Register></Register>}></Route>
         <Route path='products' element={<Products></Products>}></Route>
+        <Route path='vip' element={<Vip></Vip>}></Route>
         <Route path='orders' element={
           <RequireAuth>
             <Orders></Orders>

@@ -18,6 +18,11 @@ const Header = () => {
                 <Link to={'orders'}>Orders</Link>
                 <Link to={'register'}>Register</Link>
                 {
+                    user && <>
+                        <Link to={'/vip'}>Vip</Link>
+                    </>
+                }
+                {
                     user?.uid ?
                         <button onClick={() => signOut()}>SignOut</button>
                         :
